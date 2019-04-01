@@ -1,0 +1,159 @@
+	<!DOCTYPE html>
+	<html lang="en" class="no-js">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="UTF-8">
+	
+     	
+     <script src="js/bootstrap.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/mdb.min.js"></script>
+     <script src="js/sidebar.js"></script>
+     <script src="js/all.min.js"></script>
+     <script src="bootstrap/jquery.min.js"></script>
+  	<script src="bootstrap/jquery.min.js"></script>
+
+      	 <link href="css/sidebar.css" rel="stylesheet">
+    	<link href="css/mdb.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css">		
+		<link href="css/navigation.css"  rel="stylesheet" >
+		<link href="css/all.min.css" rel="stylesheet">
+			
+			 
+		<style>
+			ul .dropdown-menu{
+				margin-right:50px;
+				background-color:#D8D8D8;
+			
+				border-radius:10px;
+			}
+			.col-sm-4{
+				text-align:center;
+			}
+			.col-sm-4 ul{
+				color:red;
+				background-color:rgba(255,255,155,0.4);
+				border:1px solid grey;
+				border-radius:10px;
+				padding:2px;
+			}
+		</style>
+		</head>
+
+		<body>	
+		  <header id="header">
+	  		<div class="header-top">
+	  			<div class="container">
+			  		<div class="row align-items-center">
+			  			<div class="col-lg-4 col-sm-2 col-2 header-top-left">
+			  				<a href="tel:+918839847409">
+			  					<i class="fa fa-phone"></i>&nbsp<span class="text">+91 8839847409</span></a>
+				  			<a href="mailto:srkit28@gmail.com"><i class="fa fa-envelope"></i><span class="text">&nbsp srkit28@gmail.com</span></a>			
+			  			</div>
+
+			  			<div class="col-lg-6 col-sm-6 col-6 header-top-right"  >
+			  			
+			  			</div>
+
+			  			<div class="col-lg-2 col-sm-4 col-4">
+			  				
+							<a href="signup.jsp"><button class="btn btn-info btn-sm" >SignUp <i class="fas fa-user-plus"></i></button>
+			  					</a>
+					 	</div>
+					</div>		  					
+	  			</div>
+			</div>
+
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <h1><b id="p1" style="color:#FF0000; font-size:30px">
+						Path<i class="fa fa-cog fa-spin fa-3x fa-fw" style="font-size:20px;color="#FF0000"></i></b><b id="p2"style="color:#1B7FB3; font-size:30px">Doctor</b>
+					</h1>
+			      </div>
+
+			      <nav id="nav-menu-container">
+			       
+			        <ul class="nav-menu">
+			     
+			          <li><a href="index.jsp" id="home">Home</a></li>
+			          <li><a href="about.jsp" id="about">About</a></li>
+			          <li><a href="features.jsp" id="features">Features</a></li>
+			          <li><a href="#" id="mission">Our mission</a></li>
+			          <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" id="doctor">Doctors</a>
+			          <ul class="dropdown-menu">
+          					<div class="row">
+					          	
+					            <li><a href="dlogin.jsp" id="dlogin">Doctor Login</a></li>
+					            <li><a href="dsignup.jsp" id="dsignup">Doctor Signup</a></li>
+					            <li><a href="#" id="department">Department</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#" id="services">Services</a></li>
+					         	<li><a href="doctorlist.jsp" id="doctorl">Doctor's List</a></li>
+					         
+    						</div>
+        
+          			</ul>
+        			</li>   
+			          
+
+					<li><a href="#ucontact" >Contact</a></li>
+			          <li><a href="login.jsp" id="login">Login&nbsp<i class="fa fa-user" ></i></a></li>
+			 
+			     </ul>
+
+			     </nav>
+
+				<div id="sidebtn">	
+			      <button  onclick="openNav();" aria-hidden="true" class="btn btn-danger btn-sm" style="cursor:pointer;float:right; font-size: 18px"><a href="#" ><i class="fa fa-bars"></i></a></button>
+			    </div>
+			          		    		
+		    </div>
+		    	
+		   </div>
+	</header>
+		 
+	<div id="mySidenav" class="sidenav" >
+		
+		  <button type="button" class="close" onclick="closeNav()" aria-label="Close" aria-hidden="true" style="float:left; margin-left:10px">
+        <h1> X</h1>
+        </button>
+			
+			 	<div class="row">
+			 		<div class="col-sm-4">
+			 		<ul>
+			 			<li><a ><b>Home Module</b></a></li>
+					 	<li><a href="index.jsp">Home</a></li>
+						<li><a href="about.jsp">About</a></li>
+						<li><a href="features.jsp">Features</a></li>
+						  <li><a href="#ucontact">Contact</a></li>
+					</ul>
+			 		</div>
+			 		<div class="col-sm-4">
+						<ul>
+								<li><a ><b>User Module</b></a></li>
+					
+					  <li><a href="login.jsp">User Login</a></li>
+					  <li><a href="signup.jsp">User SignUp</a></li>
+					</ul>
+				</div>
+			 		<div class="col-sm-4">
+			 			<ul>
+			 				<li><a ><b>Doctor Module</b></a></li>
+			 				<li><a href="dlogin.jsp">Doctor Login</a></li>
+							<li><a href="dsignup.jsp">Doctor SignUp</a></li>
+							<li><a href="doctorlist.jsp">Doctor's List</a></li>
+							<li><a href="#">Department</a></li>
+							<li><a href="#">Services</a></li>
+			 			</ul>
+			 		</div>
+
+			
+			 </div>
+   
+	</div>
+
+
+</body>
+</html>

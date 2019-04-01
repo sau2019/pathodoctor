@@ -1,0 +1,174 @@
+.header-top {
+  background-color: #1B7FB3;
+  font-size: 12px;
+}
+
+.header-top a {
+  color:white;
+}
+
+.header-top ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.header-top .header-top-left a {
+  margin-right: 8px;
+}
+
+.header-top .header-top-left a .lnr {
+  color: #69be00;
+  font-weight: 700;
+  margin-right: 0px;
+}
+
+@media (max-width: 767px) {
+  .header-top .header-top-left .text {
+    display: none;
+  }
+}
+
+.header-top .header-top-right {
+  text-align:none;
+}
+
+
+.main-menu {
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background-color:#C0C0C0; 
+}
+
+
+
+
+
+  
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+  display: inline;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  right: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+.container1{
+    margin-top:130px;
+    margin-bottom:20px;
+  }
+
+
+
+
+/* Nav Meu Container */
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display:none;
+  }
+
+  .container1{
+    margin-top:130px;
+    margin-bottom:20px;
+  }
+
+ .header-top-right{
+  display:none;
+ }
+ 
+
+
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 0 8px 0px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color:#FF0000 ;
+  font-weight:600;
+  font-size: 16px;
+  text-transform: uppercase;
+ 
+}
+
+.nav-menu li:hover > a {
+  color:#008000;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 22px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(136,196,255, 0.25);
+  
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 5px 10px;
+  color:#FF0000;
+  transition: 0.3s;
+  display: block;
+  font-size: 12px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: green;
+}
+
+.nav-menu ul ul {
+  margin-right: 10px;
+  margin-top: 0;
+}
+
